@@ -34,13 +34,35 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+A fully responisve website adjusts its content fluidly to the size of the screen, desktop, tablet or mobile. The content will remain the same for the most part and the layout is basically the same.
+
+An adaptive website has a layout for each screen size and the content fitting appropriatly, the design and layout will mostly change significantly between screen sizes
+
+
 2. Describe what it means to be mobile first vs desktop first.
+
+A mobile first website is generally made to accomodate the majority of the users that visit said website, Instagram would be a perfect example since most of the users who use instagram are on the phone.
+
+A desktop first website is made for the same reason as a mobile first website but while the majority of users being for desktop. However the trend of designing desktop first websites is going down as more and more users of the internet surf on their mobile phones.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+By setting up 62,5% font-size in the html tag you're setting up a 1:10 rem to pixel ratio, meaning now 1 rem is equal to 10 pixels and that is because most browsers default font-size is 16px and 62.5% of 16 is equal to 10.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is essentially CSS with some nice features that make the life of a developper a lot easier with nesting, so you don't have to repeat yourself x times, mixins which are basically like functions, variables who keep everything nice and centralized.
+
+However you need to compile it to CSS before deploying it into your website, hence the name "pre"-processor. 
+
+So basically it's vanilla CSS but better, before being compiled to vanila CSS.
+
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing are the fact that you can pass multiple parameters into mixins making your CSS a lot more DRY.
+
+I'm definitely understanding it better now but sometimes I still struggle with nesting.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
