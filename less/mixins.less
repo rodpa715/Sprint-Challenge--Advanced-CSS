@@ -3,13 +3,13 @@
     display: flex;
     flex-direction: @f-dir;
 }
-.btnStyling(@width){
+.btnStyling(@width, @font-size){
     .flex-display(row);
     justify-content: center;
     align-items: center;
     background-color: @btn-bg-color;
     color: @wild-sand;
-    font-size: 1.8rem;
+    font-size: @font-size;
     font-weight: bold;
     padding: @up-downPadding;
     width: @width;
