@@ -160,6 +160,35 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.navigation-wrap {
+  width: 100%;
+  background-color: #F6F6F6;
+  border-bottom: 2px solid #F1F1F1;
+}
+.navigation-wrap nav {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navigation-wrap nav h1 {
+  font-size: 4.2rem;
+  margin: 1rem 0;
+}
+.navigation-wrap nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 65%;
+  padding: 1rem 0;
+}
+.navigation-wrap nav a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #454A59;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +198,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  border-radius: 0.5rem;
 }
 .home .intro h2 {
   padding: 15px;
@@ -211,6 +243,26 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #22283A;
+  color: #F6F6F6;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 1rem 0;
+  width: 30%;
+  border-radius: 0.5rem;
+  transition: 0.2s ease-in-out;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #bd3a3a;
+  color: #ddd124;
+  transition: 0.7s ease-in-out;
+  cursor: pointer;
 }
 .home .walk .walk-img {
   width: 46%;
