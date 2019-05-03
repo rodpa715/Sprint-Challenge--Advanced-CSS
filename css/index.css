@@ -160,10 +160,21 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+    width: 100%;
+  }
+}
 .navigation-wrap {
   width: 100%;
   background-color: #F6F6F6;
-  border-bottom: 2px solid #F1F1F1;
+  border-bottom: 0.2rem solid #F1F1F1;
+}
+@media (max-width: 500px) {
+  .navigation-wrap {
+    width: 100%;
+  }
 }
 .navigation-wrap nav {
   max-width: 800px;
@@ -177,6 +188,11 @@ p {
   font-size: 4.2rem;
   margin: 1rem 0;
 }
+@media (max-width: 500px) {
+  .navigation-wrap nav h1 {
+    font-size: 4rem;
+  }
+}
 .navigation-wrap nav ul {
   display: flex;
   flex-direction: row;
@@ -184,10 +200,21 @@ p {
   width: 65%;
   padding: 1rem 0;
 }
+@media (max-width: 500px) {
+  .navigation-wrap nav ul {
+    width: 100%;
+  }
+}
 .navigation-wrap nav a {
   font-size: 1.6rem;
   text-decoration: none;
   color: #454A59;
+}
+@media (max-width: 500px) {
+  .navigation-wrap nav a {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
 }
 footer {
   color: #22283B;
@@ -202,11 +229,16 @@ footer {
 .home .intro img {
   border-radius: 0.5rem;
 }
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 100%;
+  }
+}
 .home .intro h2 {
-  padding: 15px;
+  padding: 1.5rem;
 }
 .home .intro p {
-  padding: 0 15px;
+  padding: 0 1.5rem;
 }
 .home .space-images {
   display: flex;
@@ -215,12 +247,21 @@ footer {
 }
 .home .space-images img {
   width: 28%;
-  margin: 20px 2.5%;
-  border-radius: 20px;
+  margin: 2rem 2.5%;
+  border-radius: 2rem;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+  }
+  .home .space-images img.sky,
+  .home .space-images img.launch {
+    display: none;
+  }
+}
 .home .visit-planets {
-  padding: 15px;
+  padding: 1.5rem;
 }
 .home .visit-planets h3 {
   margin-top: 11px;
@@ -229,20 +270,33 @@ footer {
   margin-top: 13px;
 }
 .home .walk {
-  margin-top: 60px;
+  margin-top: 6rem;
   border-top: 1px solid #dee2e6;
-  padding: 50px 60px;
+  padding: 5rem 6rem;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1.5rem;
+    margin-top: 1rem;
+  }
 }
 .home .walk .walk-text {
   width: 50%;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
+}
 .home .walk .walk-text h3 {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 .home .walk .walk-text p {
-  margin-bottom: 26px;
+  margin-bottom: 2.6rem;
 }
 .home .walk .walk-text .btn {
   display: flex;
@@ -253,10 +307,10 @@ footer {
   color: #F6F6F6;
   font-size: 1.8rem;
   font-weight: bold;
-  padding: 1rem 0;
-  width: 30%;
+  padding: 1rem;
+  width: 10rem;
   border-radius: 0.5rem;
-  transition: 0.2s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
 .home .walk .walk-text .btn:hover {
   background-color: #bd3a3a;
@@ -264,12 +318,40 @@ footer {
   transition: 0.7s ease-in-out;
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #22283A;
+    color: #F6F6F6;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 2.4rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    transition: 0.7s ease-in-out;
+  }
+  .home .walk .walk-text .btn:hover {
+    background-color: #bd3a3a;
+    color: #ddd124;
+    transition: 0.7s ease-in-out;
+    cursor: pointer;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 1rem;
 }
