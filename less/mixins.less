@@ -1,1 +1,17 @@
 // Mixins Here
+.flex-display(@f-dir){
+    display: flex;
+    flex-direction: @f-dir;
+}
+.btnStyling(@width){
+    .flex-display(row);
+    justify-content: center;
+    align-items: center;
+    background-color: @btn-bg-color;
+    color: @wild-sand;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: @up-downPadding;
+    width: @width;
+    border-radius: @smallBorderRadius;
+}
