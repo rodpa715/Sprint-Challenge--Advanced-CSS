@@ -7,15 +7,14 @@
         max-width: 800px;
         width: 100%;
         margin: 0 auto; 
-        display: flex;
-        flex-direction: column;
+        .flex-display(column);
         align-items: center;
         h1{
             font-size: 4.2rem;
             margin: @up-downPadding;
         }
         ul{
-            display: flex;
+            .flex-display(row);
             justify-content: space-evenly;
             width: 65%;
             padding: @up-downPadding;
