@@ -1,1 +1,29 @@
 // Mixins Here
+.flex-display(@f-dir){
+    display: flex;
+    flex-direction: @f-dir;
+}
+.btnStyling(@width, @Padding){
+    .flex-display(row);
+    justify-content: center;
+    align-items: center;
+    background-color: @btn-bg-color;
+    color: @wild-sand;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: @Padding;
+    width: @width;
+    border-radius: @smallBorderRadius;
+    transition: 0.7s ease-in-out;
+    &:hover{
+        background-color: @btn-hover-bg;
+        color: @btn-hover-txt;
+        transition: 0.7s ease-in-out;
+        cursor: pointer;
+    }
+}
+.phone-expand(){
+    @media @phone{
+        width: 100%;
+    }
+}
